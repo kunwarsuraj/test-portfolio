@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------- BASIC CSS --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    text-rendering: optimizeLegibility;    
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #676767;
+    letter-spacing: 1px;
+}
+
+img { 
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* -------- RESUSABLE COMPONENTS --------- */
+
+.container {
+    max-width: 1140px;
+}
+
+/* -------- HEADINGS --------- */
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+
+/* -------- NAVBAR --------- */
+.main-header {
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.fixed-top {
+    background-color: rgba(0,0,0,0.4);
+    /*border-bottom: 1px solid #ddd;*/
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.6);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1);
+}
+
+/* -------- BANNER --------- */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+    padding-top: 260px;
+}
+
+.banner p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner h1 {
+    font-size: 55px;
+}
+
+/* -------- ABOUT --------- */
+#about {
+    padding: 50px 0;
+}
+
+#about b {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style: inside;
+}
+
+/* -------- OVERALL --------- */
+#overall-info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/overall-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.counter {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 0;
+    border-radius: 4px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-3x {
+    color: #165eaa;
+}
+
+
+/* -------- TESTIMONIAL --------- */
+#testimonial-sec {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+.testimonial{
+    border-left: 3px solid #165eaa;
+    padding: 100px 0 100px 275px;
+    position: relative
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    width: 320px;
+    height: 55px;
+    border-right: 3px solid #165eaa;
+    position: absolute;
+    left: 0;
+}
+.testimonial:before{
+    border-top: 3px solid #165eaa;
+    top: 0;
+}
+.testimonial:after{
+    border-bottom: 3px solid #165eaa;
+    bottom: 0;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .description{
+    font-size: 14px;
+    color: #7a7e82;
+    line-height: 27px;
+    position: relative;
+}
+.testimonial .description:before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    font-size: 20px;
+    color: #7a7e82;
+}
+.testimonial .testimonial-title{
+    font-size: 22px;
+    font-weight:800;
+    color: #22272c;
+    text-transform: capitalize;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color : #165eaa;
+    margin-top: 10px;
+}
+.owl-theme .owl-controls{
+    text-align: right;
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    background: #6ab33e;
+    border-radius: 0;
+    opacity: 1;
+    padding: 5px 10px;
+}
+.owl-prev:before,
+.owl-next:before{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    color: #fff;
+}
+.owl-next:before{
+    content: "\f054";
+}
+
+
+
+/* -------- PROJECT SECTION --------- */
+#projects {
+    padding: 50px 0;
+}
+
+#projects .content-wrap {
+    position: relative;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#projects .wrap1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/laninfotech.jpg);
+}
+
+#projects .wrap2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/cohn.png);
+}
+
+#projects .wrap3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/veltec.png);
+}
+
+#projects .hover-text {
+    background: rgba(233,58,61,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease;
+    opacity: 0;
+    visibility: hidden;
+    padding: 110px 15px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#projects .hover-text a {
+    border: 1px solid #fff;
+    padding: 8px 20px;
+}
+
+#projects .hover-text a i {
+    padding-left: 5px;
+}
+
+#projects .content-wrap:hover .hover-text {
+    opacity: 1; 
+    visibility: visible;
+}
+
+
+/* -------- EDUCATION SECTION --------- */
+#education-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/education-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-transform: capitalize;
+    padding: 50px 0;
+}
+
+#education-sec .mb-25 {
+    margin-bottom: 3rem;
+}
+
+#education-sec .company-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#education-sec .col-border {
+    border-right: 1px solid #fff;
+}
+
+
+/* -------- CONTACT --------- */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#contact button {
+    background-color: #165eaa;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+#contact button:hover {
+    background-color: #4091e6;
+}
+
+#contact input[type="email"]::-webkit-input-placeholder, #contact input[type="text"]::-webkit-input-placeholder, #contact textarea::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-size: 12px;
+}
+
+/* -------- FOOTER --------- */
+footer {
+    padding: 15px 0;
+}
+
+footer p, footer ul {
+    margin: 0;
+}
+
+footer ul i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer ul i:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ------------- SROLL BUTTON ---------------- */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 42px;
+    background: #e93a3d;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+
+/* ------------- COMMON STYLE ---------------- */
+#about h2, #projects h3, #testimonial-sec h2, #education-sec h2, #contact h1 {
+    font-size: 35px;
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0 0 40px;
+}
+
+#about h2:before, #projects h3:before, #testimonial-sec h2:before, #education-sec h2:before, #contact h1:before {
+    position: absolute;
+    content: "";
+    background-color: #e93a3d;
+    bottom: 0;
+    left: 0;
+    width: 45px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
